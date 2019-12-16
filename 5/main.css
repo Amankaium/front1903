@@ -1,0 +1,66 @@
+/*
+в body default height = auto, margin = 8
+height vh используется чаще
+у дочернего элемента можно настроить размеры по %, если у родителя явно указан размер (px, vh)
+https://docs.emmet.io/cheat-sheet/
+html https://docs.emmet.io/cheat-sheet/  магия emmet
+
+*/
+
+
+body {
+    margin: 0;
+}
+
+.menu {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-item{
+    display: inline;
+}
+
+.big {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.small {
+    vertical-align: middle;
+}
+
+img {
+    height: 50px;
+}
+
+.search {
+    text-align: center;
+    height: 50px;
+}
+
+
+
+/* body {
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    height: 200px;
+    background: green;
+}
+
+.box {
+    width: 300px;
+    height: 100%;
+    background: black;
+}
+
+.child {
+    width: 70vw;
+    background: red;
+    height: 50%;
+} */
