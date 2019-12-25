@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background: #333;
+    color: #eee;
+    border-right: 15px solid darkgoldenrod;
+    border-radius: 50%;
+}
+
+.rope {
+    width: 400px;
+    height: 10px;
+    margin-top: 60px;
+    margin-left: -50px;
+    background: yellow;
+}
+
+.desk {
+    width: 500px;
+    margin: 50px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: rgb(65, 47, 0);
+    /* overflow: hidden; */
+}
+
+.blade {
+    width: 100%;
+    /* margin-left: -20%; */
+    margin-top: 10px;
+    height: 200px;
+    background: rgb(163, 163, 163);
+    border-bottom-left-radius: 50% 30%;
+    border-bottom-right-radius: 50% 30%;
+    transition: margin-top 0.7s ease-in;
+}
+
+.blade:hover {
+    margin-top: 200px;
+}
+
+.holes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.big-hole {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+}
