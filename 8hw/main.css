@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: 
+        linear-gradient(180deg, #131317 -60.19%, rgba(65, 66, 99, 0.09) 100%),
+        url("./bg.png") center / cover;
+    height: 100vh;
+    color: white;
+    font-family: "SF Pro Display", "SF Pro Text", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 44px 240px;
+    align-items: center;
+    border-bottom: #E7E7F2 solid 1px;
+    width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    /* justify-content: space-between; */
+    min-width: 200px;
+}
+
+li {
+    display: inline;
+    margin-right: 60px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+
+
+}
+
+.search {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+}
+
+main {
+    width: 100vw;
+    
+}
+
+form {
+    width: 100vw;
+}
