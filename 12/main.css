@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 42px 30px;
+    border-bottom: 1px solid black;
+}
+
+.header__title {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.header__title span {
+    color: #5DC191;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    min-height: 100vh;
+}
+
+.feed {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    grid-template-rows: 326px 100px 100px;
+    grid-row-gap: 40px;
+    grid-column-gap: 70px;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 34px auto;
+    grid-template-areas: 
+        "image image"
+        "logo date"
+        "title title";
+    margin-bottom: 40px;
+}
+
+.news__img {
+    grid-area: image;
+    background: url("./trump.png") center / cover;
+    box-shadow: 0px 4px 10px rgba(255, 80, 96, 0.2);
+    border-radius: 10px;
+}
+
+.news__logo {
+    height: 18px;
+    grid-area: logo;
+    align-self: center;
+}
+
+.news__date {
+    height: 17px;
+    font-size: 14px;
+    grid-area: date;
+    align-self: center;
+    justify-self: right;
+    color: rgba(0, 0, 0, 0.6)
+    
+}
+
+.news__title {
+    font-size: 22px;
+    grid-area: title;
+}
+
+.news--big {
+    grid-area: 1 / 2 / span 2 / span 1;
+    grid-template-rows: 1fr 34px auto;
+}
+
+.news--mini {
+    grid-template-rows: 160px 34px auto;
+}
+
+.ads {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "ads__logo ads__date  ads__img"
+        "ads__title ads__title ads__img"
+    ;
+}
+
+.ads__logo {
+    grid-area: ads__logo;
+}
+
+.ads__date {
+    grid-area: ads__date;
+    color: rgba(0, 0, 0, 0.6);
+    justify-self: right;
+}
+
+.ads__img {
+    grid-area: ads__img;
+    background: url("./image/pixel.png") center / cover;
+}
+
+.ads__title {
+    grid-area: ads__title;
+    font-size: 16px;
+}
+

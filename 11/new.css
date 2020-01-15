@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: 50px repeat(5, 100px);
+    grid-template-rows: 20px repeat(3, 100px);
+    grid-template-areas:
+        "... mo tu we th fr"
+        "nine run run run run run"
+        "twelve english coding coding coding coding"
+        "fifteen english coding coding coding coding";
+}
+
+.day {
+    background: grey;
+    /* grid-area: day; */
+    /* width: 50px; */
+    /* height: 50px; */
+    color: #eee;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.time {
+    background: darkblue;
+    color: #eee;
+    align-items: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.day:nth-of-type(1) {
+    grid-area: mo;
+}
+
+.day:nth-of-type(2) {
+    grid-area: tu;
+}
+
+.day:nth-of-type(3) {
+    grid-area: we;
+}
+
+.day:nth-of-type(4) {
+    grid-area: th;
+}
+
+.day:nth-of-type(5) {
+    grid-area: fr;
+}
+
+.time:nth-of-type(6) {
+    grid-area: nine;
+}
+
+.time:nth-of-type(7) {
+    grid-area: twelve;
+}
+
+.time:nth-of-type(8) {
+    grid-area: fifteen;
+}
+
+.run {
+    grid-area: run;
+    padding: 10px;
+    background: lightblue;
+}
+
+.english {
+    grid-area: english;
+    padding: 10px;
+    background: lightgoldenrodyellow;
+}
+
+.coding {
+    grid-area: coding;
+    padding: 10px;
+    background: #333;
+    color: #eee; 
+}
