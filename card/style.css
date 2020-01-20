@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #e5e5e5;
+}
+
+.card {
+  background: linear-gradient(121.05deg, #8676fb 0%, #ab7bff 100%);
+  border-radius: 6px;
+  padding: 6px 20px 12px 20px;
+  width: 295px;
+  height: 174px;
+  color: white;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-rows: 1fr 87px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "card__logo ... ... card__options"
+    "card__numbers1 card__numbers2 card__numbers3 card__numbers4"
+    "card__holder card__holder ... card__expires"
+    "card__name card__name card__name card__date";
+  grid-column-gap: 12px;
+}
+
+.card__logo {
+  grid-area: card__logo;
+}
+
+.card__options {
+  grid-area: card__options;
+  justify-self: right;
+}
+
+
+.card__numbers:nth-of-type(1) {
+  grid-area: card__numbers1;
+}
+
+.card__numbers:nth-of-type(2) {
+  grid-area: card__numbers2;
+  justify-self: center;
+}
+
+.card__numbers:nth-of-type(3) {
+  grid-area: card__numbers3;
+  justify-self: center;
+}
+
+.card__numbers:nth-of-type(4) {
+  grid-area: card__numbers4;
+  justify-self: right;
+}
+
+.card__caption--name {
+  grid-area: card__holder;
+}
+
+.card__caption--date {
+  grid-area: card__expires;
+  justify-self: right;
+}
+
+.card__value--name {
+  grid-area: card__name;
+}
+
+.card__value--date {
+  grid-area: card__date;
+  justify-self: right;
+}
+
+.card__numbers {
+  font-size: 18px;
+
+}
+
+.card__caption {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.card__value {
+  font-size: 16px;
+  font-weight: bold;
+}

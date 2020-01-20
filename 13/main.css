@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: green;
+    font-family: sans-serif;
+}
+
+:root {
+    --btn-color: #5458F7;
+    --text-color: black;
+    --helper-text: white;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    --btn-color: #5458F7;
+    --text-color: black;
+    --helper-text: white;
+    --user-bg: white;
+
+    padding: 20px;
+}
+
+.container--dark {
+    --btn-color: rgb(211, 67, 0);
+    --text-color: white;
+    --helper-text: white;
+    --user-bg: #191A1D;
+}
+
+.user {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 24px 64px rgba(45, 48, 58, 0.06);
+    background: var(--user-bg);
+    overflow: hidden;
+}
+
+.container--dark .user {
+    background: var(--user-bg);
+}
+
+.user__header {
+    /* width: 320px; */
+    /* padding: 29.5px 20px 0 20px; */
+    padding: 29.5px 20px 0 20px;
+    height: 130px;
+    background: url("./image/background.png") center / cover;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.user__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 76px;
+    padding-bottom: 40px;
+}
+
+.user__avatar {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: -12px 12px 20px rgba(253, 103, 3, 0.2);
+    margin-top: -50px;
+    /* background: #fff; */
+    background: url("./image/avatar.png") center / cover;
+    margin-bottom: 16px;
+}
+
+.btn {
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: var(--btn-color);
+    border-radius: 40px;
+    width: 100%;
+    height: 32px;
+    color: white;
+}
+
+.container--dark .btn {
+    background: var(--btn-color);
+}
+
+.btn--outline {
+    border: 1px solid #F2F2F2;
+    background: none;
+}
+
+.container--dark .btn--outline {
+    border: 0;
+    background: rgb(59, 59, 59);
+}
+
+.btn--flat {
+    display: inline-flex;
+    border: 0;
+    background: none;
+    min-width: 32px;
+    width: auto;
+    justify-content: space-between;
+
+}
+
+.container--dark .btn--flat {
+    background: none;
+}
+
+.user__name {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.user__followers {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.user__actions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 110px 50px;
+    grid-column-gap: 6px;
+}
+
+
