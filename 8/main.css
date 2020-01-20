@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+input, button {
+    border: 0;
+    background: none;
+    font-family: inherit;
+}
+
+.form {
+    background:rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(70px);
+}
+
+.text-field {
+    border-radius: 6px;
+    padding-left: 6px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .3);
+}

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 4px 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    min-width: 100px;
+    max-width: 30vw;
+    border: 0;
+}
+
+input[type="text"] {
+    color:red;
+    /* height: 200px; */
+}
+
+.number-field {
+    color: green;
+    width: 100%;
+}
